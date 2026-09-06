@@ -18,7 +18,7 @@
 
 ---
 
-## 🪧 About the Shop
+## About the Shop
 
 This is my **first ever Go project** — and my first attempt at building a
 (somewhat) functional CLI app. It's a little interactive coffee shop that
@@ -37,7 +37,7 @@ showing through, not a bug report waiting to happen. 😄
 
 ---
 
-## 📋 The Menu
+## The Menu
 
 ```
 ╔═════════════════════════════════════════════════════════════════════════════════════════╗
@@ -66,7 +66,7 @@ showing through, not a bug report waiting to happen. 😄
 ╚════════════════════════════════════════════╩════════════════════════════════════════════╝
 ```
 
-> ⚠️ Order the **Gophers Special Syrup** at your own financial risk.
+> ⚠️ Order the **Gophers Special Syrup** at your own risk... lol.
 
 The real menu is drawn straight from the code at runtime (sorted by price,
 box-drawn and centered by hand), so what you see above is close, but the
@@ -74,7 +74,7 @@ app itself is the source of truth.
 
 ---
 
-## 🧾 How it works
+## How it works
 
 Run it, and the gopher behind the counter will walk you through your order,
 one question at a time:
@@ -132,7 +132,7 @@ struct with `%v` instead of a proper description. Charming, in its own way.)_
 
 ---
 
-## 🏃 Running the app
+## Running the app
 
 Requires Go 1.21+ (built and tested with go.mod targeting `go 1.27.1`).
 
@@ -144,7 +144,7 @@ go run .
 
 ---
 
-## 🎓 What I learned brewing this
+## What I learned brewing this
 
 - Structs and methods (`Drink`, `Syrup`, `Size`, `Temperature`, `Order`,
   `Menu`, `Receipt`) - modelling a real-ish thing as a handful of small types
@@ -160,7 +160,7 @@ go run .
 
 ---
 
-## 🚧 Known rough edges
+## Known rough edges
 
 - `Barista.MakeCoffee` / `Barista.ServeCoffee` are stubs... the gopher just
   _says_ your coffee is coming
