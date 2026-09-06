@@ -1,24 +1,24 @@
 ```
 ╔══════════════════════════════════════════════════════════╗
-║                                                            ║
-║                  ☕  GOPHERS COFFEE SHOP  ☕                ║
-║                    ~ freshly brewed in Go ~                ║
-║                                                            ║
+║                                                          ║
+║               ☕  GOPHERS COFFEE SHOP  ☕                  ║
+║                ~ freshly brewed in Go ~                  ║
+║                                                          ║
 ╚══════════════════════════════════════════════════════════╝
 ```
 
-<p align="center">
+<p align="left">
   <img src="https://raw.githubusercontent.com/golang-samples/gopher-vector/master/gopher.png" width="180" alt="The Go gopher, pouring coffee in spirit if not in pixels" />
 </p>
 
-<p align="center">
+<p align="left">
   <em>A cheerful, over-caffeinated little gopher runs the till here.<br/>
   He's new at this. Be patient with him.</em>
 </p>
 
 ---
 
-## 🪧 About the house
+## 🪧 About the Shop
 
 This is my **first ever Go project** — and my first attempt at building a
 (somewhat) functional CLI app. It's a little interactive coffee shop that
@@ -28,12 +28,12 @@ proper little ASCII receipt on the way out.
 I'm brand new to Go, so please don't expect production-grade code behind
 the counter. What's here was built with:
 
-- 📗 Two Codecademy lessons — *Learn Go* and *Learn Go: Loops, Arrays,
-  Maps, and Structs*
+- 📗 Two Codecademy lessons: _Learn Go_ and _Learn Go: Loops, Arrays,
+  Maps, and Structs_
 - 📘 The first few modules of the official [**Tour of Go**](https://go.dev/tour/)
 
 If you spot rough edges (there will be rough edges), that's the learning
-showing through — not a bug report waiting to happen. 😄
+showing through, not a bug report waiting to happen. 😄
 
 ---
 
@@ -85,7 +85,7 @@ one question at a time:
 4. Hot, Warm, or Over Ice?
 
 Say **"no"** when asked if there's anything else, and you'll get your total
-plus a fully itemised receipt — box-drawn, of course.
+plus a fully itemised receipt... box-drawn, of course.
 
 ```
 $ go run .
@@ -127,8 +127,8 @@ Your order comes to £6.50
 your order will be with you in about 5 seconds, speedy service I know
 ```
 
-*(that `{Latte 4} {Caramel 1} ...}` line is a known rough edge — printing a
-struct with `%v` instead of a proper description. Charming, in its own way.)*
+_(that `{Latte 4} {Caramel 1} ...}` line is a known rough edge. Printing a
+struct with `%v` instead of a proper description. Charming, in its own way.)_
 
 ---
 
@@ -147,7 +147,7 @@ go run .
 ## 🎓 What I learned brewing this
 
 - Structs and methods (`Drink`, `Syrup`, `Size`, `Temperature`, `Order`,
-  `Menu`, `Receipt`) — modelling a real-ish thing as a handful of small types
+  `Menu`, `Receipt`) - modelling a real-ish thing as a handful of small types
 - Maps for menu data, plus sorting a map's contents into a stable, priced
   order for display
 - Pointers (`*OrderItem`, `*Order`) for mutating state across a loop
@@ -155,21 +155,21 @@ go run .
 - `bufio.Scanner` for reading line-by-line terminal input
 - String formatting and padding by hand to draw the menu and receipt boxes
   with `strings.Repeat`, `utf8.RuneCountInString`, and a lot of trial and error
-- Basic control flow patterns — nested loops as a makeshift state machine
+- Basic control flow patterns: nested loops as a makeshift state machine
   for walking through an order, step by step
 
 ---
 
 ## 🚧 Known rough edges
 
-- `Barista.MakeCoffee` / `Barista.ServeCoffee` are stubs — the gopher just
-  *says* your coffee is coming
+- `Barista.MakeCoffee` / `Barista.ServeCoffee` are stubs... the gopher just
+  _says_ your coffee is coming
 - Input handling forgives case (`Latte` = `latte` = `LATTE`) and trims
   leading/trailing whitespace, but not typos or extra spaces mid-word
-- No tests yet — next thing on the list once I'm past "Tour of Go"
+- No tests yet, next thing on the list once I'm past "Tour of Go"
 
 ---
 
 <p align="center">
-  <sub>Built with 🐹 by a very caffeinated beginner.</sub>
+  <sub>Built by a very caffeinated Go beginner.</sub>
 </p>
